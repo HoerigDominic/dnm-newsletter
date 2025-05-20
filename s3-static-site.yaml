@@ -5,7 +5,7 @@ Resources:
   StaticSiteBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: dnm-newsletter-static-site-2
+      BucketName: dmn-newsletter-registration-site
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
