@@ -123,6 +123,26 @@
       font-size: 0.85rem;
       opacity: 0.6;
     }
+
+    .audio-card {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: var(--card-light);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: background 0.3s ease;
+    }
+
+    body.dark .audio-card {
+      background: var(--card-dark);
+    }
+
+    .audio-label {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+
   </style>
 </head>
 <body>
@@ -131,6 +151,22 @@
   <div class="container">
     <h1>🗞️ Aktuelle News abonnieren</h1>
 
+      <div class="audio-card">
+        <div class="audio-label">🎧 Willkommen!</div>
+        <audio controls>
+          <source src="audio/welcome.mp3" type="audio/mpeg">
+          Dein Browser unterstützt kein Audio.
+        </audio>
+      </div>
+
+      <div class="audio-card">
+        <div class="audio-label">🎧 Welcome!</div>
+        <audio controls>
+          <source src="audio/welcome-en.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    
     <form id="newsletterForm">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
